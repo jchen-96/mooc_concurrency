@@ -6,28 +6,28 @@ package com.jchen.concurrency.Cp05;
 import com.jchen.concurrency.annoations.ThreadSafe;
 
 @ThreadSafe
-public class SafePublish7 {
+public class SafePublish07 {
 
-    private SafePublish7(){
+    private SafePublish07(){
 
     }
 
-    public static SafePublish7 getInstance(){
+    public static SafePublish07 getInstance(){
         return Singleton.INSTANCE.getInstance();
     }
 
     private enum Singleton{
         INSTANCE;
 
-        private SafePublish7 safePublish7;
+        private SafePublish07 safePublish7;
 
 
         //JVM保证这个方法只被调用一次
         Singleton(){
-            safePublish7=new SafePublish7();
+            safePublish7=new SafePublish07();
         }
 
-        public SafePublish7 getInstance(){
+        public SafePublish07 getInstance(){
             return safePublish7;
         }
     }

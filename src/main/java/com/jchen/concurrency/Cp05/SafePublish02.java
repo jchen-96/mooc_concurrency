@@ -1,7 +1,6 @@
 package com.jchen.concurrency.Cp05;
 
 
-import com.jchen.concurrency.annoations.NotThreadSafe;
 import com.jchen.concurrency.annoations.ThreadSafe;
 
 /**
